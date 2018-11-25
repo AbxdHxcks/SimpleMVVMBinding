@@ -9,6 +9,8 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <TextBox x:Name="TB1" HorizontalAlignment="Left" Height="150" Margin="592,390,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="300"/>
+        <TextBox x:Name="TB2" HorizontalAlignment="Left" Height="150" Margin="926,390,0,0" TextWrapping="Wrap" Text="{Binding Text, ElementName=TB1, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="300"/>
 
     </Grid>
 </Page>
